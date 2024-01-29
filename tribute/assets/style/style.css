@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Mulish', sans-serif;
+}
+
+:root {
+    --primary: #22223B;
+    --secondary: #E7E7FC;
+    --text-dark: #0d1b2a;
+    --text-clay: #F2E9E4;
+    --text-brown: #9A8C98;
+    --text-light: #eee;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    
+    color: var(--text-light);
+    
+    overflow-x: hidden;
+}
+
+section {
+    min-width: 100%;
+    min-height: 100dvh;
+    padding:1rem 2.5rem;
+    
+}
+.main {
+    background-color: var(--primary);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    &::first-letter {
+        color: var(--text-brown);
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    text-align: start;
+}
+.disc {
+    flex: 1;
+    
+}
+.disc p {
+    text-indent: 2rem;
+    font-size: 1.2rem;
+    font-family: "Mulish";
+    font-family: 500;
+    line-height: 2rem;
+}
+.img {
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding-bottom: 2rem;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    filter:brightness(55%);
+    border-radius: 45% / 45%;
+}
+
+.quote {
+    flex: 1;
+    position: relative;
+    /* padding-inline: 1.5rem; */
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    font-size: 7rem;
+    font-family: "Mulish";
+}
+.quote::after {
+    content: "\201D";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    font-size: 7rem;
+    font-family: "Mulish";
+}
+
+.tribute {
+    background-color: var(--secondary);
+}

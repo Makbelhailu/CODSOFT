@@ -45,20 +45,23 @@ coming soon
 
 ### Installation
 Clone the repository:
-> `git clone https://github.com/Makbelhailu/CODSOFT.git`
+
+    git clone https://github.com/Makbelhailu/CODSOFT.git
 
 Navigate to the project folder:
 
-> `cd CODSOFT`
+    cd CODSOFT
 
 To get the tribute project navigate to:
 
->> `cd tribute`
+    cd tribute
 
 To get the job portal project navigate to:
 
->> `cd job-portal`
->> `npm install`
+ ```
+cd job-portal
+npm install
+```
 
 ### Usage
 - Follow project-specific instructions in the respective project folders for the Tribute Website and Job Portal.

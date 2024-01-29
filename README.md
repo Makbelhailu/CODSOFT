@@ -86,4 +86,4 @@ If you have any questions or suggestions, feel free to contact me at [mcwelson@g
 
 ---
 
-<center style="font-size: 30px; font-weight: bolder;">Happy coding!</center>
+<p align="center" style="font-size: 30px; font-weight: bolder;">Happy coding!</p>

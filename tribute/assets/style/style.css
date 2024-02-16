@@ -10,28 +10,29 @@
 :root {
     --primary: #22223B;
     --secondary: #E7E7FC;
+    --bg-clay: #F2E9E4;
+    --bg-brown: #9A8C98;
     --text-dark: #0d1b2a;
-    --text-clay: #F2E9E4;
-    --text-brown: #9A8C98;
     --text-light: #eee;
 }
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
     width: 100%;
-    
     color: var(--text-light);
-    
     overflow-x: hidden;
+
 }
+
 
 section {
     min-width: 100%;
     min-height: 100dvh;
     padding:1rem 2.5rem;
-    
+    scroll-snap-align: start;
 }
 .main {
     background-color: var(--primary);
@@ -40,7 +41,7 @@ section {
 .header h1 {
     font-size: 1.5rem;
     &::first-letter {
-        color: var(--text-brown);
+        color: var(--bg-brown);
     }
 }
 
@@ -112,6 +113,55 @@ section {
     font-family: "Mulish";
 }
 
-.tribute {
+.tributes {
+    padding: 1rem 5rem;
     background-color: var(--secondary);
+}
+.tribute {
+    padding: 3rem 5rem;
+    background-color: var(--bg-brown);
+    color: var(--text-dark);
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding: 1rem 0;
+}
+
+.tribute h3 {
+    font-size: 1.4rem;
+}
+.six ul {
+    text-align: start;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 3rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .disc {
+        flex: 2;
+        padding-inline: 3rem;
+        text-align: center;
+    }
+    .img img {
+        height: 400px;
+        flex: 1;
+    }
+    .quote {
+        flex: 2;
+        padding-inline: 3rem;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

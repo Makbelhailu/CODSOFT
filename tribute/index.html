@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Tribute</title>
 </head>
 <body>
@@ -12,40 +14,40 @@
                     <h1>Elon musk</h1>
                 </div>
                 <div class="container">
-                <div class="disc">
+                <div class="disc" data-aos="fade-right">
                     <p>Welcome to this tribute page dedicated to Elon Musk, a modern-day visionary who has reshaped the landscape of technology and space exploration. Born on June 28, 1971, in Pretoria, South Africa, Musk has become a household name synonymous with innovation, entrepreneurship, and a relentless pursuit of audacious goals.</p>
                 </div>
-                <div class="img">
+                <div class="img" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="assets/img/elon-musk.png" alt="Elon musk picture">
                 </div>
-                <div class="quote">
+                <div class="quote" data-aos="fade-left">
                     <h3>When something is important enough, you do it even if the odds are not in your favor.</h3>
                 </div>
             </section>
                 </div>
             <section class="tributes">
                 <div class="grid">
-                    <div class="tribute one">
+                    <div class="tribute one" data-aos="fade-down">
                         <h3>Early Ventures</h3>
                         <p>Elon Musk's journey into the world of business started with ventures like Zip2 and X.com, which later became PayPal. Even in his early career, Musk demonstrated an unwavering commitment to pushing boundaries and transforming industries.</p>
                     </div>
-                    <div class="tribute two">
+                    <div class="tribute two" data-aos="fade-down">
                         <h3>Electric Revolution - Tesla, Inc.</h3>
                         <p>In 2003, Musk founded Tesla, Inc., with a mission to accelerate the world's transition to sustainable energy. Tesla's electric vehicles have not only redefined the automotive industry but have also set new standards for performance, safety, and environmental responsibility.</p>
                     </div>
-                    <div class="tribute three">
+                    <div class="tribute three" data-aos="fade-down" data-aos-duration="1000">
                         <h3>Commercial Space Exploration - SpaceX</h3>
                         <p>Musk's vision extended beyond Earth as he founded SpaceX in 2002 with the goal of reducing space transportation costs and enabling the colonization of Mars. SpaceX has achieved remarkable milestones, including the development of reusable rocket technology and the successful launch of the Falcon and Starship spacecraft.</p>
                     </div>
-                    <div class="tribute four">
+                    <div class="tribute four" data-aos="fade-down" data-aos-duration="1000">
                         <h3>Renewable Energy - SolarCity and Solar Power</h3>
                         <p>Musk's commitment to sustainability also led to the acquisition of SolarCity, a solar energy services company. Through Tesla's solar products, including solar panels and solar roofs, Musk aims to revolutionize the way we generate and consume energy.</p>
                     </div>
-                    <div class="tribute five">
+                    <div class="tribute five" data-aos="fade-down" data-aos-duration="2000">
                         <h3>The Boring Company and Hyperloop</h3>
                         <p>In addition to Tesla and SpaceX, Musk founded The Boring Company, focused on tunnel construction and urban infrastructure, and has proposed the Hyperloop, a high-speed transportation system. These ventures showcase Musk's ambition to solve complex problems and reshape traditional industries.</p>
                     </div>
-                    <div class="tribute six">
+                    <div class="tribute six" data-aos="fade-down"data-aos-duration="2000">
                         <h3>Elon Musk's insightful words</h3>
                         <ul>
                             <li>"I think it's possible for ordinary people to choose to be extraordinary."</li>
@@ -55,7 +57,10 @@
                     </div>
                 </div>
             </section>
-    
-        <script src="https://unpkg.com/scrollreveal"></script>
+
+            
+            <script>
+                AOS.init({once: true,});
+            </script>
 </body>
 </html>
